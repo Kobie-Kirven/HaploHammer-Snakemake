@@ -1,0 +1,48 @@
+################################################
+# Config file for running HaploHammer pipeline #
+################################################
+
+# --- General parameters --- #
+################################################
+# VCF file to be analyzed
+#  - Use this paramater if you have a single VCF
+#    containing multiple accessions. 
+################################################
+vcf: NA
+
+################################################
+# Path to the file with the sample IDS
+#  - Use this parameter if you have a single VCF
+#    containing multiple accessions.
+#  - The file should contain one sample ID per 
+#    line
+#
+# To get the sample IDs from a VCF file, run:
+#   bcftools query -l <vcf_file> > sample_ids.txt
+################################################
+sample_ids: 
+
+
+################################################
+# Path to the directory containing the VCF files
+#  - Use this parameter if you have multiple VCFs
+#    in a directory.
+################################################
+vcf_dir: NA
+
+################################################
+# Path to the output directory
+################################################
+output_dir: 
+
+################################################
+# Path to the reference genome
+# - Note this must be an unzipped fasta file
+################################################
+reference_genome: 
+
+################################################
+# Path to the gene model file
+# - Note this must be an unzipped gff3/gtf file
+################################################
+gene_model: 
