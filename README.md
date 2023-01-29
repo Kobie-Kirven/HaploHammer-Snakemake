@@ -15,4 +15,20 @@ To install the pipeline, simply clone the repository:
 git clone https://github.com/Kobie-Kirven/HaploHammer-Snakemake.git
 ```
 
+## Usage
+Before running the pipeline, you must first edit the config file and fill in the fields. NOTE: All paths must be absolute paths (meaning they must start with a `/`).
+
+Example:
+```
+# VCF file to be analyzed
+vcf: /Users/path/to/vcf/file.vcf.gz
+```
+
+Once the config file is filled out, you can run the pipeline using the following command:
+```
+snakemake --use-conda --conda-frontend conda --cores <number of cores>
+```
+
+And that's it! The pipeline will run and output will be an `allele_matrix.csv` file in the `output` directory.
+
 
