@@ -29,6 +29,6 @@ Once the config file is filled out, you can run the pipeline using the following
 snakemake --use-conda --conda-frontend conda --cores <number of cores>
 ```
 
-And that's it! The pipeline will run and output will be an `allele_matrix.csv` file in the `output` directory.
+And that's it! The pipeline will run and output will be an `allele_matrix.csv` file in the specified output directory.
 
 
