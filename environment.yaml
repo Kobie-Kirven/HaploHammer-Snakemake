@@ -1,0 +1,10 @@
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=2.7
+  - vcftools
+  - bcftools
+  - pip:
+    - biopython==1.76
